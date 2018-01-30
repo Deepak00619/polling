@@ -1,0 +1,20 @@
+.angular {
+  color: #b52e31;
+}
+
+.react {
+  color: #00d8ff;
+}
+
+.vue {
+  color: #42b883;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.chart {
+  height: 300px;
+  width: 100%;
+}
