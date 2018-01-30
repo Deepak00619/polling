@@ -35,7 +35,7 @@ from the `CanvasJS.Chart` in `main.js` and instead create a `<p>` element in `in
         <div class="chart" id="chartContainer"></div>
     ```
     
-1. Add the `setTimeout()` function to `main.js`
+1. Add the `setInterval()` function to `main.js`
 
     ```typescript
     // Loads on Startup
