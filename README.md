@@ -27,12 +27,15 @@ title: {
 from the `CanvasJS.Chart` in `main.js` and instead create a `<p>` element in `index.html` right above the chart to emulate the chart title.  The displayed `totalVotes` value in this HTML Element is then updated using the `setInterval()` function.
 
 1. Create the Chart Title in `index.html`
+
     ```html
         <br><br>
         <p class="title is-size-4 has-text-centered" id="chartTitle"></p>  <!-- Bulma CSS classes used -->
         <div class="chart" id="chartContainer"></div>
     ```
+    
 1. Add the `setTimeout()` function to `main.js`
+
     ```typescript
     // Loads on Startup
     fetch('http://localhost:3000/poll')
