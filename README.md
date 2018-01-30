@@ -32,7 +32,7 @@ from the `CanvasJS.Chart` in `main.js` and instead create a `<p>` element in `in
         <p class="title is-size-4 has-text-centered" id="chartTitle"></p>  <!-- Bulma CSS classes used -->
         <div class="chart" id="chartContainer"></div>
     ```
-1. Add the `setTimeout()` function to `main.js
+1. Add the `setTimeout()` function to `main.js`
     ```typescript
     // Loads on Startup
     fetch('http://localhost:3000/poll')
