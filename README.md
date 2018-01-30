@@ -81,7 +81,7 @@ I'm not sure if there's a fix for this client/sever side as it seems like this h
 1. `cd` into the folder of the cloned repo
 1. Run `yarn install` to install dependencies
 1. Configure your keys file `config/keys.js`
-    * From the root directomy, create the keys file `touch config/keys.js`
+    * From the root directory, create the keys file `touch config/keys.js`
     * Enter your API keys for `Pusher` and `MongoDB` into `keys.js`
 
         ```typescript
