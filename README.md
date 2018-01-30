@@ -17,8 +17,9 @@ This project is the result of my code-along to the Pusher Polling App, [Node.js 
 ## Updating the Chart Title to Display Total Votes
 When a user voted, the chart title was not updated in realtime along with the chart.  The reason for this is that in the `main.js` file, the `fetch` function that called the GET request at the `http://localhost:3000/poll` endpoint only fires once after the webpage is loaded.  Therefore, even though the user is voting, the title is not being updated!  
 
-There may be a better solution to this, but the solution I came up with was to de-couple the chart title by deleting
-```
+There may be a more elegant solution, but the one I came up with was to de-couple the chart title by deleting
+
+```typescript
 title: {
     text: `Total Votes ${totalVotes}`
 },
@@ -59,7 +60,7 @@ from the `CanvasJS.Chart` in `main.js` and instead create a `<p>` element in `in
     ```
 
 ## Realtime Chart Display if no Votes Exist in the Database
-If the user starts the application with a fresh database (ie. no votes have yet ben cast), the chart will not display voting in realtime until **all categories have at least 1 vote**.  One solution is to set the initial properties in the `voteCounts` object to 0 if the object is found to be empty using the code below in `main.js`
+If the user starts the application with a fresh database (ie. no votes have yet been cast), the chart will not display voting in realtime until **all categories have at least 1 vote**.  One solution is to set the initial properties in the `voteCounts` object to 0 if the object is found to be empty using the code below in `main.js`
 
 ```typescript
     // Set initial Data Points - example adapted to be consistent with Brad's original project
