@@ -72,12 +72,10 @@ If the user starts the application with a fresh database (ie. no votes have yet 
     }
 ```
 
-## Displaying Data if Votes Exists in One Category, but not the other
-I'm not sure if there's a fix for this client/sever side as it seems like this has more to do with the behavior of the CanvasJS API.  Essentially what happens is when there's data for one or several categories, but not the other categories (ie. the categories with no votes), when the page is refreshed and a user tries to vote in these voteless categories, the chart does not display votes in realtime until the page is again refreshed.  Once **all categories have at least 1 vote**, the chart updates in realtime as expected.  Hopefully, there will be a way to fix this; however, at this time, the solution has remained elusive to me.
+
 
 # Cloning the Project for Personal Use
 ## Installation
-1. Clone this repo `git clone https://github.com/stanleyeosakul/js-pusher-poll.git`
 1. `cd` into the folder of the cloned repo
 1. Run `yarn install` to install dependencies
 1. Configure your keys file `config/keys.js`
